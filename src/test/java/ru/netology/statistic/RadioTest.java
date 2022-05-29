@@ -27,7 +27,7 @@ public class RadioTest {
         rad.nextRadioStationNumber ();
 
         int actual = rad.getCurrentRadioStationNumber ();
-        int expected = 0;
+        int expected = 2;
 
         assertEquals (expected, actual);
     }
