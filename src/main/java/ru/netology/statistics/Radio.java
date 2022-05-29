@@ -24,10 +24,10 @@ public class Radio {
         if (newNextRadioStationNumber > 9) {
             currentRadioStationNumber = 0;
         } else {
-            newNextRadioStationNumber = currentRadioStationNumber + 1;
+            currentRadioStationNumber = currentRadioStationNumber + 1;
         }
         //this.currentRadioStationNumber = newNextRadioStationNumber;
-        setCurrentRadioStationNumber (newNextRadioStationNumber);
+        setCurrentRadioStationNumber (currentRadioStationNumber);
     }
 
     public void prevRadioStationNumber() {

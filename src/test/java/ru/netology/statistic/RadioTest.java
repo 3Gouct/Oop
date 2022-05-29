@@ -20,7 +20,19 @@ public class RadioTest {
     }
 
     @Test
-    void setMinCurrentRadioStationNumber() {
+    void setMinCurRadStNum() {
+        Radio rad = new Radio ();
+
+        rad.setCurrentRadioStationNumber (-1);
+
+        int actual = rad.getCurrentRadioStationNumber ();
+        int expected = 0;
+
+        assertEquals (expected, actual);
+    }
+
+    @Test
+    void setMaxCurRadStNum() {
         Radio rad = new Radio ();
 
         rad.setCurrentRadioStationNumber (10);
@@ -31,17 +43,6 @@ public class RadioTest {
         assertEquals (expected, actual);
     }
 
-    @Test
-    void setMaxCurrentRadioStationNumber() {
-        Radio rad = new Radio ();
-
-        rad.setCurrentRadioStationNumber (-1);
-
-        int actual = rad.getCurrentRadioStationNumber ();
-        int expected = 0;
-
-        assertEquals (expected, actual);
-    }
 
     @Test
     void nextRadioStationNumber() {
