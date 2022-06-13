@@ -2,6 +2,9 @@ package ru.netology.statistics;
 
 public class Radio {
 
+    private int maxStation = 9;
+    private int minStation = 0;
+
     private int currentStation;
     private int currentVolume;
 
