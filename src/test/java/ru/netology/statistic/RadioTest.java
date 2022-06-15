@@ -6,15 +6,17 @@ import ru.netology.statistics.Radio;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class RadioTest {
-    Radio rad = new Radio ();
 
     @Test
     void setRadio() {
-        Radio rad = new Radio (10);
-        rad.setAmountStation (10);
+        Radio rad1 = new Radio (24,0, 25);
+        rad1.setAmountStation (24);
+        rad1.setCurrentStation (13);
 
-        assertEquals (10, rad.getAmountStation ());
+        assertEquals (13, rad1.getCurrentStation ());
     }
+
+    Radio rad = new Radio ();
 
     @Test
     void setRadio1() {
@@ -142,10 +144,10 @@ public class RadioTest {
         rad.setCurrentVolume (100);
         rad.setNextVolume ();
 
-        int actuual = rad.getCurrentVolume ();
+        int actual = rad.getCurrentVolume ();
         int expected = 100;
 
-        assertEquals (expected, actuual);
+        assertEquals (expected, actual);
     }
 
     @Test

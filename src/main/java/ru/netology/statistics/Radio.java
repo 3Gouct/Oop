@@ -1,5 +1,8 @@
 package ru.netology.statistics;
 
+import jdk.jfr.DataAmount;
+
+
 public class Radio {
 
     private int amountStation = 10;
@@ -13,10 +16,14 @@ public class Radio {
     private int minVolume = 0;
 
     private int maxVolume = 100;
+
     private int currentVolume;
 
-    public Radio(int amountStation) {
+    public Radio(int amountStation, int minStation, int maxStation) {
+
         this.amountStation = amountStation;
+        this.minStation = minStation;
+        this.maxStation = maxStation;
     }
 
     public Radio() {
