@@ -9,11 +9,11 @@ public class RadioTest {
 
     @Test
     void setRadio() {
-        Radio rad1 = new Radio (24,0, 25);
-        rad1.setAmountStation (24);
-        rad1.setCurrentStation (13);
+        Radio rad1 = new Radio (20);
+        rad1.setAmountStation (20);
+        rad1.setCurrentStation (15);
 
-        assertEquals (13, rad1.getCurrentStation ());
+        assertEquals (15, rad1.getCurrentStation ());
     }
 
     Radio rad = new Radio ();
@@ -88,15 +88,15 @@ public class RadioTest {
         assertEquals (expected, actual);
     }
 
-        @Test
-        void setCurSt () {
-            rad.setCurrentStation (-1);
+    @Test
+    void setCurSt() {
+        rad.setCurrentStation (-1);
 
-            int actual = rad.getCurrentStation ();
-            int expected = 0;
+        int actual = rad.getCurrentStation ();
+        int expected = 0;
 
-            assertEquals (expected, actual);
-        }
+        assertEquals (expected, actual);
+    }
 
     @Test
     void setCurrentVolume() {
